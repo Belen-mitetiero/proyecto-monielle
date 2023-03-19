@@ -6,6 +6,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 /* ESTILOS GENERALES */
 
 /* HEADER */
@@ -20,7 +22,6 @@
 .logo img{
     width: 200px;
 }
-
 nav{
     margin: auto;
     font-size: 100%;
@@ -33,7 +34,6 @@ nav{
     justify-content: center;
     margin-bottom: -1rem;
 }
-
 .nav-web > li > a{
     display: block;
     padding: 15px 0px;
@@ -88,10 +88,7 @@ button.navbar-toggler {
 }
 
 
-
-
-
-
+/* ESTILOS DE TIPOGRAFÍAS GENERALES */
 h1{
     font-weight: 500;
     text-align: center;
@@ -99,20 +96,53 @@ h1{
     margin-bottom: 16px;
 }
 
+
+
+
 /*FOOTER*/
 #footer {
     background-color: #e9ebee;
-    display: flex; 
 }
-#footer a, li{
+.img-footer img {
+    max-width: 100px;
+    margin: 20px 0px;
+}
+.content-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: solid 1px;
+    border-color: #3D5A80;
+    padding: 40px 80px 0px;
+    margin: 0px 95px;
+}
+#footer ul, a, li{
     text-decoration: none;
-    color: #000000;
     list-style: none;
+    color: #000000;
+    padding: 0px;
 }
-#footer div{
-    margin: 40px 100px;
+.content-final-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 95px;
+    padding: 20px;
 }
-
+.content-social-footer {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+.content-final-footer li a i {
+    font-size: 1.5rem;
+}
+.categorias-principales, .info-footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -120,10 +150,9 @@ h1{
 .icon-home{
     width: 40px;
 }
-.banner-home{
-    width: 100%;
-}
 
+
+/*SECCION DE PRENDAS DESTACADAS - INDEX*/
 #prendas-temporada{
     padding: 40px;
     text-align: center;
@@ -143,6 +172,9 @@ h1{
 .button:hover{
     background-color: #102641;
 }
+.button-content {
+    margin: 48px 0px;
+}
 
 .content-box-clothes{
     display: grid;
@@ -160,13 +192,19 @@ h1{
     align-items: center;
 }
 
+
+/* SECCION DE INFORMACIÓN EXTRA - INDEX*/
 .info-home{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #EDE4DE;
+    align-items: center;
+    gap: 60px;
+    padding: 48px;
+    margin: 32px 0px;
 }
 .item-info{
-    margin: 60px;
     text-align: center;
 }
 .item-info h4{
@@ -179,7 +217,7 @@ h1{
 
 
 
-/*Galeria home*/ 
+/* SECCION DE GALERIA - INDEX*/ 
 
 .collage-container{
     display: grid;
@@ -213,8 +251,6 @@ h1{
 .collage-container .gallery-six {
     grid-row: 3/5;
 }
-
-
 
 
 .block-collage {
@@ -299,17 +335,29 @@ h1{
 
 
 
-/* DISEÑO ADAPTATIVO */
+
+
+
+
+
+/* DISEÑO ADAPTATIVO CON MEDIA */
 
 /* NAV BAR */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    #prendas-temporada {
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 861px) {
     #nav-mobile{
         display: none;
         padding-top: 0;
     }    
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
     .menu-horizontal {
         display: none;
     }
@@ -321,11 +369,6 @@ h1{
     }
    
 }
-@media screen and (max-width: 968px) {
-    #footer{
-        flex-direction: column;
-    }
-}
 @media screen and (max-width: 1023px) {
     .content-box-clothes{
         display: grid;
@@ -334,4 +377,33 @@ h1{
         margin: 16px 60px;
     }
 }
+
+
+
+
+/* FOOTER CON MEDIA QUERIES */
+
+@media screen and (max-width: 1023px) {
+    .content-footer {
+        flex-direction: column;
+        margin: 48px;
+        padding: 40px 20px 0px;
+    }
+    .content-final-footer {
+        flex-wrap: wrap;
+        margin: 0px 48px;
+    }
+    .content-final-footer p, .social-media {
+        padding: 0px 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .content-footer {
+        padding: 40px 0px;
+    }
+    .content-final-footer {
+        padding: 0px 0px 20px;
+    }
+}
+
 
