@@ -261,6 +261,10 @@ h1{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
+}
+.gallery-five img {
+    object-position: center;
 }
 .title-block-collage {
     position: absolute;
@@ -276,6 +280,10 @@ h1{
     width: 100%;
     padding: 20px;
     text-align: center;
+}
+.button-block-collage a:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 .button-block-collage a{
     display: inline;
@@ -369,12 +377,97 @@ h1{
     }
    
 }
+
+/* PRENDAS DESTACADAS CON MEDIA QUERIES */
 @media screen and (max-width: 1023px) {
     .content-box-clothes{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        margin: 16px 60px;
+        gap: 40px 20px;
+        margin: 16px 48px;
+    }
+    #prendas-temporada {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-box-clothes{
+        margin: 16px 20px;
+    }
+}
+
+
+/* GALERIA CON MEDIA QUERIES */
+@media screen and (max-width: 1023px) {
+    .collage-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        padding: 0;
+        margin: 20px 48px;
+    }
+    .collage-container .gallery-one {
+        grid-row: 1/3;
+    }
+    
+    .collage-container .gallery-two {
+        grid-row: auto;
+    }
+    
+    .collage-container .gallery-three {
+        grid-row: 2/4;
+        grid-column: auto;
+    }
+    
+    .collage-container .gallery-four{
+        grid-row: 3/5;
+    }
+    
+    .collage-container .gallery-five {
+        grid-row: 5/6;
+        grid-column: 1/3;
+    }
+    
+    .collage-container .gallery-six {
+        grid-row: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .collage-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 400px 400px 400px;
+        padding: 0;
+        margin: 20px;
+    }
+    .collage-container .gallery-one {
+        grid-row: auto;
+    }
+    
+    .collage-container .gallery-two {
+        grid-row: auto;
+    }
+    
+    .collage-container .gallery-three {
+        grid-row: auto;
+        grid-column: 1/3;
+    }
+    
+    .collage-container .gallery-four{
+        grid-row: auto;
+    }
+    
+    .collage-container .gallery-five {
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+    .collage-container .gallery-six {
+        grid-row: auto;
+    }
+    .button-block-collage a{
+        font-size: 0.5rem;
     }
 }
 
@@ -406,5 +499,3 @@ h1{
         padding: 0px 0px 20px;
     }
 }
-
-
