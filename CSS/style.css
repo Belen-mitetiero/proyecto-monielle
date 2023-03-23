@@ -379,6 +379,10 @@ h1{
     max-width: 100%;
     height: auto
 }
+.img-box-clothes-summersale{
+    max-width: 100%;
+    height: auto
+}
 
 
 
@@ -557,12 +561,12 @@ h1{
     }
 }
 @media screen and (max-width: 1200px) {
-    .img-box-clothes {
+    .img-box-clothes-summersale {
         max-width: 260px;
     }
 }
 @media screen and (max-width: 1024px) {
-    .img-box-clothes {
+    .img-box-clothes-summersale {
         max-width: 200px;
     }
 }
