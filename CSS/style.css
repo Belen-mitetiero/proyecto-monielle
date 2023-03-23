@@ -515,6 +515,7 @@ h1{
 
 
 
+
 /* FOOTER CON MEDIA QUERIES */
 
 @media screen and (max-width: 1023px) {
@@ -565,7 +566,6 @@ h1{
     .img-box-clothes {
         max-width: 200px;
     }
-
 }
 @media screen and (max-width: 860px) {
     .filters-mobile {
