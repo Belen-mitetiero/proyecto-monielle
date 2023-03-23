@@ -22,7 +22,7 @@
 .logo img{
     width: 200px;
 }
-nav{
+header nav{
     margin: auto;
     font-size: 100%;
     margin-top: 0px;
@@ -182,9 +182,7 @@ h1{
     gap: 40px;
     margin: 0px 60px;
 }
-.img-box-clothes{
-    max-width: 100%;
-}
+
 
 .box-clothes{
     display: flex;
@@ -337,8 +335,49 @@ h1{
     padding: 0px 8px;
     border-radius: 8px;
 } 
+.container-filters-box {
+    display: flex;
+    justify-content: space-between;
+}
 
-
+.set-box-clothes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin: 20px 20px 48px;
+}
+.filters {
+    background-color: #EDE4DE;
+    padding: 20px 40px;
+    min-width: 300px;
+}
+.box-filters ul {
+    padding: 0px;
+    min-width: 190px;
+}
+.box-filters {
+    border-bottom: solid 1px;
+    padding: 20px 0px;
+    border-color: #3D5A80;
+}
+.filters-mobile {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    background-color: #EDE4DE;
+}
+.btn {
+    background-color: #96adca;
+}
+.offcanvas-header {
+    background-color: #3D5A80;
+    color: #ffffff;
+}
+.img-box-clothes{
+    max-width: 100%;
+    height: auto
+}
 
 
 
@@ -497,5 +536,38 @@ h1{
     }
     .content-final-footer {
         padding: 0px 0px 20px;
+    }
+}
+
+
+
+/* PÁGINA SUMMER 2023 */ 
+@media screen and (max-width: 1023px) {
+    .filters{
+        display: none;
+    }
+    .container-filters-box {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .filters-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .img-box-clothes {
+        max-width: 260px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .img-box-clothes {
+        max-width: 200px;
+    }
+
+}
+@media screen and (max-width: 860px) {
+    .filters-mobile {
+        padding-top: 90px;
     }
 }
