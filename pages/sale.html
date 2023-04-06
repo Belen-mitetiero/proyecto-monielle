@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Prendas con hasta 40% de descuento. Aprovecha ahora y llevate el conjunto que buscas. Remeras, chombas, camisas, pantalones, jeans, zapatos.">
+    <meta name="keywords"  content="ropa masculina, ropa, indumentaria, textil, remeras, buzos, trajes de vestir, vestimenta masculina, tienda de ropa">
+
     <link rel="shortcut icon" href="../Imagenes/Monielle_circle_black.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../sass/main.css">
     <title>Monielle</title>
 </head>
 
@@ -63,16 +67,16 @@
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="./summer.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Summer 2023</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Chombas</a></li>
-                                            <li><a href="#">Remeras manga corta</a></li>
-                                            <li><a href="#">Camisas manga corta</a></li>
-                                            <li><a href="#">Camisas manga larga</a></li>
-                                            <li><a href="#">Sweaters</a></li>
-                                            <li><a href="#">Camperas y chalecos</a></li>
-                                            <li><a href="#">Buzos</a></li>
-                                            <li><a href="#">Bermudas</a></li>
-                                            <li><a href="#">Shorts de baño</a></li>
-                                            <li><a href="#">Pantalones y jeans</a></li>
+                                            <li><a href="./summer.html">Chombas</a></li>
+                                            <li><a href="./summer.html">Remeras manga corta</a></li>
+                                            <li><a href="./summer.html">Camisas manga corta</a></li>
+                                            <li><a href="./summer.html">Camisas manga larga</a></li>
+                                            <li><a href="./summer.html">Sweaters</a></li>
+                                            <li><a href="./summer.html">Camperas y chalecos</a></li>
+                                            <li><a href="./summer.html">Buzos</a></li>
+                                            <li><a href="./summer.html">Bermudas</a></li>
+                                            <li><a href="./summer.html">Shorts de baño</a></li>
+                                            <li><a href="./summer.html">Pantalones y jeans</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -96,316 +100,694 @@
             </nav>
     </header>
 
-    <main class="filters">
-        <div>
-            <div class="filter-title">
-                <h3>Categorías</h3>
+    
+    <main class="container-filters-box">
+        <!-- FILTROS DE LA SECCIÓN DE VENTAS -->
+        <section class="filters">
+
+            <!-- FILTRO DE CATEGORÍAS -->
+            <div class="box-filters filters-web">
+                <div class="filter-title">
+                    <h5>Categorías</h5>
+                </div>
+                <div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Chombas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Remeras manga corta
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Camisas manga corta
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Camisas manga larga
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Sweaters
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Camperas y chalecos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Buzos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Bermudas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Shorts de baño
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Pantalones y jeans
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li><a href="#">Chombas</a></li>
-                    <li><a href="#">Remeras manga corta</a></li>
-                    <li><a href="#">Camisas manga corta</a></li>
-                    <li><a href="#">Camisas manga larga</a></li>
-                    <li><a href="#">Sweaters</a></li>
-                    <li><a href="#">Camperas y chalecos</a></li>
-                    <li><a href="#">Buzos</a></li>
-                    <li><a href="#">Bermudas</a></li>
-                    <li><a href="#">Shorts de baño</a></li>
-                    <li><a href="#">Pantalones y jeans</a></li>
-                </ul>
+
+            <!-- FILTROS DE TALLE -->
+            <div class="box-filters filters-web">
+                <div class="filter-title">
+                    <h5>Talle</h5>
+                </div>
+                <div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            XS
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            S
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            M
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            L
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            XL
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            XXL
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            XXXL
+                        </label>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <div class="filter-title">
-                <h3>Talle</h3>
+
+            <!-- FILTROS DE COLOR -->
+            <div class="box-filters filters-web">
+                <div class="filter-title">
+                    <h5>Color</h5>
+                </div>
+                <div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Negro
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Blanco
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Gris
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Beige
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Marrón
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Amarillo
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Azul
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Verde
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Rojo
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li><a href="#">XS</a></li>
-                    <li><a href="#">S</a></li>
-                    <li><a href="#">M</a></li>
-                    <li><a href="#">L</a></li>
-                    <li><a href="#">XL</a></li>
-                    <li><a href="#">XXL</a></li>
-                    <li><a href="#">XXXL</a></li>
-                </ul>
+        </section>
+        
+
+        <!-- FILTROS PARA MOBILE OFFCANVAS -->
+        <section class="filters-mobile">
+            <div class="offcanvas-mobile">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <i class="bi bi-funnel"></i> Filtros</button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filtros</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+
+                    <div div class="offcanvas-body">
+
+                        <!-- FILTROS DE CATEGORÍAS -->
+                        <div class="box-filters">
+                            <div class="filter-title">
+                                <h5>Categorías</h5>
+                            </div>
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Chombas
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Remeras manga corta
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Camisas manga corta
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Camisas manga larga
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Sweaters
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Camperas y chalecos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Buzos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Bermudas
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Shorts de baño
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Pantalones y jeans
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FILTROS DE TALLE -->
+                        <div class="box-filters">
+                            <div class="filter-title">
+                                <h5>Talle</h5>
+                            </div>
+                            <div>
+                                
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        XS
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        S
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        M
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        L
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        XL
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        XXL
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        XXXL
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FILTROS DE COLOR -->
+                        <div class="box-filters">
+                            <div class="filter-title">
+                                <h5>Color</h5>
+                            </div>
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Negro
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Blanco
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Gris
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Beige
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Marrón
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Amarillo
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Azul
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Verde
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Rojo
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <div class="filter-title">
-                <h3>Color</h3>
+        </section>
+
+
+        <!-- BOXS DE PRENDAS A LA VENTA -->
+        <section class="set-box-clothes">
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/camisa-portela-coderas.jpg" alt="Modelo masculino vistiendo camisa blanca con coderas celestes" class="img-box-clothes-summersale img-box-principal"></a>
+                </div>
+            
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Camisa portela</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li><a href="#">Negro</a></li>
-                    <li><a href="#">Blanco</a></li>
-                    <li><a href="#">Gris</a></li>
-                    <li><a href="#">Beige</a></li>
-                    <li><a href="#">Marrón</a></li>
-                    <li><a href="#">Amarillo</a></li>
-                    <li><a href="#">Azul</a></li>
-                    <li><a href="#">Verde</a></li>
-                    <li><a href="#">Rojo</a></li>
-                </ul>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/chomba-york.jpg" alt="Modelo masculino vistiendo chomba color rosa pastel" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Chomba york</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
             </div>
-        </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/remera-teran.jpg" alt="Modelo masculino vistiendo una remera azul oscuro con lineas laterales" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Remera teran</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/remera-terpink.jpg" alt="Modelo masculino vistiendo remera color rosa, posando sobre una silla" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Remera terpink</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/buzo-black.jpg" alt="Modelo masculino vistiendo buzo negro con la palabra BLACK bordada" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Buzo black</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/bermuda-lion.jpg" alt="Modelo masculino vistiendo bermuda color azul con una remera blanca básica" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Camisa limber lino</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/chomba-perton.jpg" alt="Modelo masculino vistiendo chomba color camel claro" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Chomba perton</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/campera-granite.jpg" alt="Modelo masculino vistiendo campera gris" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Campera granite</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/camisa-anafi.jpg" alt="Modelo masculino vistiendo camisa estampada negra con formas coloridas" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Chomba tevira</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/remera-aston.jpg" alt="Modelo masculino vistiendo remera de mangas largas color rosa" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Remera aston</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-summer-2023/camisa-berkan.jpg" alt="Modelo masculino vistiendo camisa rallada color beige y blanco" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Camisa berkan</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+            <div class="box-clothes">
+                <div>
+                    <h4 class="ofert-text-box">
+                        En oferta
+                    </h4>
+                    <a href="#"><img src="../Imagenes/productos-sale/camisa-belice.jpg" alt="Modelo masculino vistiendo camisa color celeste con pequeños estampados" class="img-box-clothes-summersale"></a>
+                </div>
+                
+                <div>
+                    <h2 class="title-box-clothes">
+                        <a href="#">Camisa belice</a>
+                    </h2>
+                </div>
+                <div>
+                    <span class="price-box-clothes">
+                        $10.000,00
+                    </span>
+                    <span class="oldprice-box-clothes">
+                        $16.999,99
+                    </span>
+                </div>
+            </div>
+
+
+            <!-- PAGINACION  -->
+            <div class="pagination-end">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </section>
     </main>
 
-    <section class="set-box-clothes">
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 1" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 2" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 3" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 4" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 5" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 6" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 7" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 8" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 9" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 10" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 11" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-        <div class="box-clothes">
-            <div>
-                <h4 class="ofert-text-box">
-                    En oferta
-                </h4>
-                <a href="#"><img src="#" alt="Conjunto de ropa 11" class="img-box-clothes"></a>
-            </div>
-            <div>
-                <h2 class="title-box-clothes">
-                    <a href="#">Camisa de lino</a>
-                </h2>
-            </div>
-            <div>
-                <span class="price-box-clothes">
-                    $10.000,00
-                </span>
-                <span class="oldprice-box-clothes">
-                    $16.999,99
-                </span>
-            </div>
-        </div>
-    </section>
+
+    
 
     <!-- FOOTER!! -->
     <footer id="footer">

@@ -1,0 +1,547 @@
+@charset "UTF-8";
+/* VARIABLES */ /* PAGINA INDEX */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+.icon-home {
+  width: 40px;
+}
+
+/*SECCION DE PRENDAS DESTACADAS - INDEX*/
+#prendas-temporada {
+  padding: 40px;
+  text-align: center;
+}
+
+.box-clothes a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.button {
+  background-color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #102641;
+}
+
+.button-content {
+  margin: 48px 0px;
+}
+
+.content-box-clothes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin: 0px 60px;
+}
+
+.box-clothes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SECCION DE INFORMACIÓN EXTRA - INDEX*/
+.info-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #EDE4DE;
+  align-items: center;
+  gap: 60px;
+  padding: 48px;
+  margin: 32px 0px;
+}
+
+.item-info {
+  text-align: center;
+}
+
+.item-info h4 {
+  font-weight: 700;
+}
+
+.item-info h5 {
+  font-weight: 400;
+}
+
+/* SECCION DE GALERIA - INDEX*/
+.collage-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: 500px;*/
+  grid-template-rows: 200px 200px 100px 300px;
+  padding: 48px 95px;
+  grid-gap: 20px;
+}
+
+.collage-container .gallery-one {
+  grid-row: 1/3;
+}
+
+.collage-container .gallery-two {
+  grid-row: 1/4;
+}
+
+.collage-container .gallery-three {
+  grid-row: 1/3;
+}
+
+.collage-container .gallery-four {
+  grid-row: 3/5;
+}
+
+.collage-container .gallery-five {
+  grid-row: 4/5;
+}
+
+.collage-container .gallery-six {
+  grid-row: 3/5;
+}
+
+.block-collage {
+  position: relative;
+}
+
+.collage-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.gallery-five img {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.title-block-collage {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button-block-collage {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.button-block-collage a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button-block-collage a {
+  display: inline;
+  border: solid 2px;
+  border-color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.button-block-collage a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*PAGINA SUMMER*/
+.container-filters-box {
+  display: flex;
+  justify-content: space-between;
+}
+.container-filters-box .filters {
+  background-color: #EDE4DE;
+  padding: 20px 40px;
+  min-width: 300px;
+}
+.container-filters-box .filters .box-filters {
+  border-bottom: solid 1px;
+  padding: 20px 0px;
+  border-color: #3D5A80;
+}
+.container-filters-box .filters .box-filters ul {
+  padding: 0px;
+  min-width: 190px;
+}
+.container-filters-box .filters-mobile {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  background-color: #EDE4DE;
+}
+.container-filters-box .filters-mobile .btn {
+  background-color: #96adca;
+}
+.container-filters-box .filters-mobile .offcanvas-header {
+  background-color: #3D5A80;
+  color: #ffffff;
+}
+.container-filters-box .set-box-clothes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 20px 20px 48px;
+}
+.container-filters-box .set-box-clothes .box-clothes .title-box-clothes a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.container-filters-box .set-box-clothes .box-clothes .img-box-clothes-summersale {
+  max-width: 100%;
+  height: auto;
+}
+.container-filters-box .set-box-clothes .box-clothes .price-box-clothes {
+  color: #000000;
+  font-size: 1.3rem;
+}
+
+/* PÁGINA SALE */
+.oldprice-box-clothes {
+  text-decoration: line-through;
+  color: #979797;
+  font-size: 1.1rem;
+}
+
+.ofert-text-box {
+  background-color: #3D5A80;
+  font-weight: 400;
+  display: inline;
+  color: #ffffff;
+  padding: 4px 16px;
+  border-radius: 0px 8px 8px 0px;
+  margin: 16px 0px;
+  position: absolute;
+}
+
+.img-box-clothes {
+  max-width: 100%;
+  height: auto;
+}
+
+/* PAGINA NOSOTROS*/
+.contact {
+  text-align: center;
+}
+
+/* CÓDIGO ORIGINAL DEL CSS */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ESTILOS GENERALES */
+/* HEADER */
+.logo-web {
+  background-color: #3D5A80;
+  text-align: center;
+  padding: 10px;
+}
+.logo-web img {
+  width: 200px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+header nav {
+  margin: auto;
+  font-size: 100%;
+  margin-top: 0px;
+  background-color: #3D5A80;
+}
+
+.nav-web > li > a {
+  display: block;
+  padding: 15px 0px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0px 35px;
+}
+
+.nav-web {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1rem;
+}
+.nav-web li:hover .menu-vertical {
+  display: block;
+}
+.nav-web ul li {
+  margin: 0px 0px;
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 220px;
+  background-color: rgba(61, 90, 128, 0.4509803922);
+  padding: 5px 15px;
+  border-radius: 0px 0px 15px 15px;
+}
+.menu-vertical li:hover {
+  background-color: rgba(61, 90, 128, 0.8549019608);
+  border-radius: 8px;
+  display: block;
+}
+.menu-vertical li a {
+  display: block;
+  color: #ffffff;
+  padding: 15px 15x 15px 20px;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #3D5A80;
+}
+
+button.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.6117647059);
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #102641;
+}
+
+/* ESTILOS DE TIPOGRAFÍAS GENERALES */
+h1 {
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+/*FOOTER*/
+#footer {
+  background-color: #e9ebee;
+}
+
+.img-footer img {
+  max-width: 100px;
+  margin: 20px 0px;
+}
+
+.content-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-bottom: solid 1px;
+  border-color: #3D5A80;
+  padding: 40px 80px 0px;
+  margin: 0px 95px;
+}
+
+#footer ul, a, li {
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+  padding: 0px;
+}
+
+.content-final-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 95px;
+  padding: 20px;
+}
+.content-final-footer li a i {
+  font-size: 1.5rem;
+}
+
+.content-social-footer {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.categorias-principales, .info-footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* DISEÑO ADAPTATIVO CON MEDIA */
+/* NAV BAR */
+@media screen and (max-width: 768px) {
+  #prendas-temporada {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 861px) {
+  #nav-mobile {
+    display: none;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 860px) {
+  .menu-horizontal {
+    display: none;
+  }
+  .logo-web {
+    display: none;
+  }
+  .bannerSlide {
+    padding-top: 79px;
+  }
+}
+/* PRENDAS DESTACADAS CON MEDIA QUERIES */
+@media screen and (max-width: 1023px) {
+  .content-box-clothes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+    margin: 16px 48px;
+  }
+  #prendas-temporada {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content-box-clothes {
+    margin: 16px 20px;
+  }
+}
+/* GALERIA CON MEDIA QUERIES */
+@media screen and (max-width: 1023px) {
+  .collage-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    padding: 0;
+    margin: 20px 48px;
+  }
+  .collage-container .gallery-one {
+    grid-row: 1/3;
+  }
+  .collage-container .gallery-two {
+    grid-row: auto;
+  }
+  .collage-container .gallery-three {
+    grid-row: 2/4;
+    grid-column: auto;
+  }
+  .collage-container .gallery-four {
+    grid-row: 3/5;
+  }
+  .collage-container .gallery-five {
+    grid-row: 5/6;
+    grid-column: 1/3;
+  }
+  .collage-container .gallery-six {
+    grid-row: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .collage-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 400px;
+    padding: 0;
+    margin: 20px;
+  }
+  .collage-container .gallery-one {
+    grid-row: auto;
+  }
+  .collage-container .gallery-two {
+    grid-row: auto;
+  }
+  .collage-container .gallery-three {
+    grid-row: auto;
+    grid-column: 1/3;
+  }
+  .collage-container .gallery-four {
+    grid-row: auto;
+  }
+  .collage-container .gallery-five {
+    grid-row: 4/5;
+    grid-column: 1/3;
+  }
+  .collage-container .gallery-six {
+    grid-row: auto;
+  }
+  .button-block-collage a {
+    font-size: 0.5rem;
+  }
+}
+/* FOOTER CON MEDIA QUERIES */
+@media screen and (max-width: 1023px) {
+  .content-footer {
+    flex-direction: column;
+    margin: 48px;
+    padding: 40px 20px 0px;
+  }
+  .content-final-footer {
+    flex-wrap: wrap;
+    margin: 0px 48px;
+  }
+  .content-final-footer p, .social-media {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content-footer {
+    padding: 40px 0px;
+  }
+  .content-final-footer {
+    padding: 0px 0px 20px;
+  }
+}
+/* PÁGINA SUMMER 2023 */
+@media screen and (max-width: 1023px) {
+  .filters {
+    display: none;
+  }
+  .container-filters-box {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .filters-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .img-box-clothes-summersale {
+    max-width: 260px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .img-box-clothes-summersale {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .container-filters-box .filters-mobile {
+    padding-top: 90px;
+  }
+}/*# sourceMappingURL=main.css.map */
