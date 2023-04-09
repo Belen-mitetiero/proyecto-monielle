@@ -171,6 +171,8 @@ h1{
 
 
 
+
+
 /* DISEÑO ADAPTATIVO CON MEDIA */
 
 /* NAV BAR */
@@ -361,4 +363,22 @@ h1{
 
 
 
+/* PÁGINA SOBRE NOSOTROS */
+
+@media screen and (max-width: 768px) {
+    .container-us-contact {
+        margin: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-us-contact .about-us .container-img-us {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 860px) {
+    .container-us-contact {
+        padding-top: 79px;
+    }
+}
 

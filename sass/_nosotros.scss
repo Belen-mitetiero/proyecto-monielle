@@ -2,3 +2,51 @@
 .contact{
     text-align: center;
 }
+
+
+.container-us-contact {
+    margin: 0px 100px;
+    .about-us {
+        padding-bottom: 56px;
+        border-bottom: solid 1px;
+        border-color: #3D5A80;
+        .container-img-us {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .contact-container {
+        padding-top: 56px;
+        text-align: center;
+        .btn {
+            background-color: #000000;
+            padding: 8px 16px;
+            margin: 20px 0px 48px;
+            text-decoration: none;
+            border-radius: 8px;
+            color: #ffffff;
+            &:hover {
+                background-color: #102641;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+
+
+
+
+p {
+    span {
+        display: block;
+        padding: 8px;
+    }
+}
