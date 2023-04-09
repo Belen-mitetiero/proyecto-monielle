@@ -99,30 +99,54 @@
                 </div>
             </nav>
     </header>
-    
-    <section class="sign-in">
-        <div>
-            <h1 class="tittle-h1">
-                Registrese para acceder al catálogo mayorista
-            </h1>
-            <h4>
-                ¿Ya tienes una cuenta?
-                <span>
-                    <a href="#">Inicia sesión aquí</a>
-                </span>
-            </h4>
-        </div>
-        <div>
-            <form action="">
-                <input type="text" name="nombre" placeholder="Nombre completo">
-                <input type="email" name="email" placeholder="Correo electrónico">
-                <input type="number" name="telefono" placeholder="Telefono (opcional)">
-                <input type="password" name="contrasena" placeholder="Contraseña">
-                <input type="password" name="rep-contrasena" placeholder="Confirmar contraseña">
-                <input type="submit" value="Enviar">
+
+
+    <main class="container-sign-in">
+        <section class="sign-in">
+            <div>
+                <h1 class="tittle-h1">
+                    Registrese para acceder al catálogo mayorista
+                </h1>
+                <h4>
+                    ¿Ya tienes una cuenta?
+                    <span>
+                        <a href="#">Inicia sesión aquí</a>
+                    </span>
+                </h4>
+            </div>
+
+            <form>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingName-cat" placeholder="Nombre completo" required>
+                    <label for="floatingName-cat">Nombre completo</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail-cat" placeholder="nombre@example.com" required>
+                    <label for="floatingEmail-cat">Correo electrónico</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingNumber-cat" placeholder="Teléfono (opcional)">
+                    <label for="floatingNumber-cat">Teléfono (opcional)</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword-cat" placeholder="Contraseña" required>
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword-cat" placeholder="Confirmar contraseña" required>
+                    <label for="floatingPassword">Confirmar contraseña</label>
+                </div>
+
+
+                <button type="submit" class="btn">Registrarse</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
+    
 
    <!-- FOOTER!! -->
     <footer id="footer">

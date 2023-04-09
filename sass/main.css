@@ -286,6 +286,27 @@ p span {
   padding: 8px;
 }
 
+.container-sign-in {
+  margin: 0px 100px;
+  text-align: center;
+}
+.container-sign-in .btn {
+  background-color: #000000;
+  padding: 8px 16px;
+  margin: 20px 0px 48px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.container-sign-in .btn:hover {
+  background-color: #102641;
+  color: #ffffff;
+}
+.container-sign-in a {
+  color: #6c99cf;
+  text-decoration: underline;
+}
+
 /* CÓDIGO ORIGINAL DEL CSS */
 * {
   padding: 0px;
@@ -601,6 +622,17 @@ h1 {
 }
 @media screen and (max-width: 860px) {
   .container-us-contact {
+    padding-top: 79px;
+  }
+}
+/* PÁGINA CATÁLOGO MAYORISTA*/
+@media screen and (max-width: 768px) {
+  .container-sign-in {
+    margin: 0px 40px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .container-sign-in {
     padding-top: 79px;
   }
 }/*# sourceMappingURL=main.css.map */
