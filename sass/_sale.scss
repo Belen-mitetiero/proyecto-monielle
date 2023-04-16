@@ -15,7 +15,27 @@
     margin: 16px 0px;
     position: absolute;
 } 
+
+.set-box-clothes .ofert-text-box{
+    z-index: 1;
+}
+
 .img-box-clothes{
     max-width: 100%;
     height: auto
+}
+
+.set-box-clothes .ofert-img {
+    text-decoration: none;
+    color: #000000;
+    overflow: hidden;
+}
+.set-box-clothes .ofert-img img {
+    width: 100%;
+    transition: 1s;
+    transform-origin: center center;
+}
+
+.set-box-clothes .ofert-img img:hover {
+    transform: scale(1.1);
 }

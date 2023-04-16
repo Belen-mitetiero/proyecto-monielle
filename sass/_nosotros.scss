@@ -13,15 +13,19 @@
         .container-img-us {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            img {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                object-position: center;
-            }
+            gap: 27px;
         }
     }
+
+    .container-us-contact {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
     .contact-container {
         padding-top: 56px;
         text-align: center;
@@ -33,20 +37,30 @@
             border-radius: 8px;
             color: #ffffff;
             &:hover {
-                background-color: #102641;
+                background-color: #3D5A80;
                 color: #ffffff;
             }
         }
     }
 }
 
-
-
-
-
 p {
     span {
         display: block;
         padding: 8px;
     }
+}
+
+.container-us-contact .container-img-us {
+    text-decoration: none;
+    color: #000000;
+    overflow: hidden;
+}
+.container-us-contact .container-img-us img {
+    width: 100%;
+    transition: 1s;
+}
+
+.container-us-contact .container-img-us img:hover {
+    transform: scale(1.1);
 }

@@ -14,6 +14,16 @@
 .box-clothes a {
   text-decoration: none;
   color: #000000;
+  overflow: hidden;
+}
+
+.box-clothes a img {
+  width: 100%;
+  transition: 1s;
+}
+
+#prendas-temporada .box-clothes a img:hover {
+  transform: scale(1.1);
 }
 
 .button {
@@ -25,7 +35,8 @@
 }
 
 .button:hover {
-  background-color: #102641;
+  background-color: #3D5A80;
+  color: #ffffff;
 }
 
 .button-content {
@@ -143,6 +154,11 @@
   color: #000000;
 }
 
+.button-block-collage a:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .button-block-collage a {
   display: inline;
   border: solid 2px;
@@ -200,19 +216,35 @@
   gap: 24px;
   margin: 20px 20px 48px;
 }
-.container-filters-box .set-box-clothes .box-clothes .title-box-clothes a {
+
+.box-clothes .title-box-clothes a {
   text-decoration: none;
   color: #000000;
   font-size: 1.3rem;
   font-weight: 500;
 }
-.container-filters-box .set-box-clothes .box-clothes .img-box-clothes-summersale {
+.box-clothes .img-box-clothes-summersale {
   max-width: 100%;
   height: auto;
 }
-.container-filters-box .set-box-clothes .box-clothes .price-box-clothes {
+.box-clothes .price-box-clothes {
   color: #000000;
   font-size: 1.3rem;
+}
+
+.set-box-clothes .box-clothes a {
+  text-decoration: none;
+  color: #000000;
+  overflow: hidden;
+}
+
+.set-box-clothes .box-clothes a img {
+  width: 100%;
+  transition: 1s;
+}
+
+.set-box-clothes .box-clothes a img:hover {
+  transform: scale(1.1);
 }
 
 /* PÁGINA SALE */
@@ -233,9 +265,29 @@
   position: absolute;
 }
 
+.set-box-clothes .ofert-text-box {
+  z-index: 1;
+}
+
 .img-box-clothes {
   max-width: 100%;
   height: auto;
+}
+
+.set-box-clothes .ofert-img {
+  text-decoration: none;
+  color: #000000;
+  overflow: hidden;
+}
+
+.set-box-clothes .ofert-img img {
+  width: 100%;
+  transition: 1s;
+  transform-origin: center center;
+}
+
+.set-box-clothes .ofert-img img:hover {
+  transform: scale(1.1);
 }
 
 /* PAGINA NOSOTROS*/
@@ -254,9 +306,9 @@
 .container-us-contact .about-us .container-img-us {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 27px;
 }
-.container-us-contact .about-us .container-img-us img {
+.container-us-contact .container-us-contact img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
@@ -277,7 +329,7 @@
   color: #ffffff;
 }
 .container-us-contact .contact-container .btn:hover {
-  background-color: #102641;
+  background-color: #3D5A80;
   color: #ffffff;
 }
 
@@ -286,9 +338,27 @@ p span {
   padding: 8px;
 }
 
+.container-us-contact .container-img-us {
+  text-decoration: none;
+  color: #000000;
+  overflow: hidden;
+}
+
+.container-us-contact .container-img-us img {
+  width: 100%;
+  transition: 1s;
+}
+
+.container-us-contact .container-img-us img:hover {
+  transform: scale(1.1);
+}
+
 .container-sign-in {
   margin: 0px 100px;
   text-align: center;
+}
+.container-sign-in .text-signIn {
+  margin-bottom: 32px;
 }
 .container-sign-in .btn {
   background-color: #000000;
@@ -299,7 +369,7 @@ p span {
   color: #ffffff;
 }
 .container-sign-in .btn:hover {
-  background-color: #102641;
+  background-color: #3D5A80;
   color: #ffffff;
 }
 .container-sign-in a {
@@ -307,7 +377,6 @@ p span {
   text-decoration: underline;
 }
 
-/* CÓDIGO ORIGINAL DEL CSS */
 * {
   padding: 0px;
   margin: 0px;
@@ -316,6 +385,14 @@ p span {
 }
 
 /* ESTILOS GENERALES */
+/* ESTILOS DE TIPOGRAFÍAS GENERALES */
+h1 {
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
 /* HEADER */
 .logo-web {
   background-color: #3D5A80;
@@ -345,9 +422,27 @@ header nav {
 .nav-web > li > a {
   display: block;
   padding: 15px 0px;
-  color: #ffffff;
+  color: #cfcfcf;
   text-decoration: none;
   margin: 0px 35px;
+}
+
+.nav-web > li > a:hover {
+  color: #ffffff;
+  /*
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #ffffff;
+  text-decoration-thickness: 2.5px;
+  */
+}
+
+.nav-web > li > a.active-nav {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #ffffff;
+  text-decoration-thickness: 2.5px;
 }
 
 .nav-web {
@@ -397,14 +492,6 @@ button.navbar-toggler {
   color: #102641;
 }
 
-/* ESTILOS DE TIPOGRAFÍAS GENERALES */
-h1 {
-  font-weight: 500;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 16px;
-}
-
 /*FOOTER*/
 #footer {
   background-color: #e9ebee;
@@ -429,8 +516,12 @@ h1 {
 #footer ul, a, li {
   text-decoration: none;
   list-style: none;
-  color: #000000;
+  color: #686868;
   padding: 0px;
+}
+
+.categorias-principales, .info-footer, a:hover {
+  color: #000000;
 }
 
 .content-final-footer {
@@ -442,6 +533,11 @@ h1 {
 }
 .content-final-footer li a i {
   font-size: 1.5rem;
+  color: #000000;
+}
+
+.content-final-footer li:hover a i {
+  color: #3D5A80;
 }
 
 .content-social-footer {

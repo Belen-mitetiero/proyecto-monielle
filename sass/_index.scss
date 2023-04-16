@@ -13,7 +13,17 @@
 .box-clothes a{
     text-decoration: none;
     color: #000000;
+    overflow: hidden;
 }
+.box-clothes a img {
+    width: 100%;
+    transition: 1s;
+}
+
+#prendas-temporada .box-clothes a img:hover {
+    transform: scale(1.1);
+}
+
 .button {
     background-color: #000000;
     padding: 8px 16px;
@@ -22,7 +32,8 @@
     color: #ffffff;
 }
 .button:hover{
-    background-color: #102641;
+    background-color: #3D5A80;
+    color: #ffffff;
 }
 .button-content {
     margin: 48px 0px;
@@ -41,6 +52,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+
 
 
 /* SECCION DE INFORMACIÓN EXTRA - INDEX*/
@@ -132,6 +145,10 @@
     text-align: center;
 }
 .button-block-collage a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.button-block-collage a:active {
     background-color: #ffffff;
     color: #000000;
 }
