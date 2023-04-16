@@ -429,12 +429,6 @@ header nav {
 
 .nav-web > li > a:hover {
   color: #ffffff;
-  /*
-  text-decoration: underline;
-  text-underline-position: under;
-  text-decoration-color: #ffffff;
-  text-decoration-thickness: 2.5px;
-  */
 }
 
 .nav-web > li > a.active-nav {
@@ -464,7 +458,7 @@ header nav {
   list-style: none;
   width: 220px;
   background-color: rgba(61, 90, 128, 0.4509803922);
-  padding: 5px 15px;
+  padding: 5px 10px;
   border-radius: 0px 0px 15px 15px;
 }
 .menu-vertical li:hover {
@@ -475,7 +469,8 @@ header nav {
 .menu-vertical li a {
   display: block;
   color: #ffffff;
-  padding: 15px 15x 15px 20px;
+  padding: 0px 0px 0px 8px;
+  margin-bottom: 5px;
   text-decoration: none;
 }
 
